@@ -4,7 +4,7 @@
 HTTP 代理有两种形式，一种是普通代理，仅对请求进行转发。第二种是隧道代理，通过 CONNECT 建立一个 TCP 连接，对字节流进行盲转发。
 
 ## 普通代理
-[普通代理](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f975dcf4258847fc953be37343b14a36~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
+![普通代理](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f975dcf4258847fc953be37343b14a36~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
 就是一个中间人的角色，负责转发两边的数据流。对于客户端来说，它是服务端。对于服务端来说，它是客户端。
 
 由于这个传输是明文的，所以代理能够拿到请求过程中的所有信息。
@@ -15,7 +15,7 @@ HTTP 代理有两种形式，一种是普通代理，仅对请求进行转发。
 1. pipe 只会转发 body 的可读流，所以在要自己拼上 header
 
 ## 隧道代理
-[隧道代理](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c514cc172f6c41e08f94e0a977dbf525~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
+![隧道代理](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c514cc172f6c41e08f94e0a977dbf525~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
 
 大致的实现逻辑如下：
 
